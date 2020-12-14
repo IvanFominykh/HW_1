@@ -44,7 +44,6 @@ distances['Paris']['Moscow'] = paris_moscow #В словарь Paris (кот. в
 
 
 
-# TODO здесь заполнение словаря
 
 pprint(distances)
 
