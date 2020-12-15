@@ -31,5 +31,5 @@ fourth_word = fourth_word_raw[::-1]
 fifth_word_raw = secret_message[4][16:21] #Почему то не получилось сразу взять фрагмент в обратном порядке
 fifht_word = fifth_word_raw[::-1]
 
-print(first_word.upper(), second_word, third_word, fourth_word, fifht_word, sep = ' ')
+print(first_word.upper(), second_word, third_word, fourth_word, fifht_word)
 
