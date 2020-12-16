@@ -26,8 +26,7 @@ secret_message = [
 first_word = secret_message[0][3]
 second_word = secret_message[1][9:13]
 third_word = secret_message[2][5:14:2]
-fourth_word_raw = secret_message[3][7:13:] #Почему то не получилось сразу взять фрагмент в обратном порядке
-fourth_word = fourth_word_raw[::-1]
+fourth_word = secret_message[3][12:6:-1]
 fifth_word_raw = secret_message[4][16:21] #Почему то не получилось сразу взять фрагмент в обратном порядке
 fifht_word = fifth_word_raw[::-1]
 

@@ -10,18 +10,36 @@ meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер'
 # создайте множество цветов, произрастающих в саду и на лугу
 # garden_set =
 # meadow_set =
-# TODO здесь ваш код
+# РЕШЕНИЕ
+garden_set = set(garden)
+meadow_set = set(meadow)
 
 # выведите на консоль все виды цветов
-# TODO здесь ваш код
+# РЕШЕНИЕ
+all_together = garden_set|meadow_set
+print('все виды цветов:', end=' ')
+print(*all_together, sep=',')
+print()
 
 # выведите на консоль те, которые растут и там и там
-# TODO здесь ваш код
+# РЕШЕНИЕ
+
+everywhere_grow = garden_set&meadow_set
+print('растут везде:', end = ' ')
+print(*everywhere_grow, sep=', ')
+print()
 
 # выведите на консоль те, которые растут в саду, но не растут на лугу
-# TODO здесь ваш код
+# РЕШЕНИЕ
+only_in_garden = garden_set-meadow_set
+print('растения, которые растут в саду, но не растут на лугу:', end=' ')
+print(*only_in_garden, sep=', ')
+print()
 
 # выведите на консоль те, которые растут на лугу, но не растут в саду
-# TODO здесь ваш код
-
+# РЕШЕНИЕ
+only_in_meadow = meadow_set- garden_set
+print('растения, которые растут на лугу, но не растут в саду:', end=' ')
+print(*only_in_meadow, sep=', ')
+print()
 
